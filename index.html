@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World again!</title>
+    <link rel="import" href="static/home.html" id="homeImport" >
+    <link rel="import" href="static/new-task.html" id="newTaskImport" >
+    <link rel="import" href="static/setting.html" id="settingImport" >
+    <link rel="import" href="static/statistics.html" id="statisticsImport" >
+    <link rel="import" href="static/timer.html" id="timerImport" >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body{font-family: "Roboto" , sans-serif ;}
+      #header{margin: 0 ; padding: 20px 16px 30px 16px }
+      #header::after{ content: " " ;display: block ; width: 100% ; clear: both;}
+      #appTitle{float: left ;color: #DE7E7E ; font-size: 1.5rem ; font-weight: 300 ; margin: 0 ; }
+      #navbar{float: right; }
+      .navicon{width: 1.4rem ;}
+    </style>
+
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 id="appTitle">POMOTODO</h1>
+      <nav id="navbar">
+          <span class="navitem"> <img class="navicon" src="assets/icon.png" alt=""></span>
+          <span class="navitem"> <img class="navicon" src="assets/icon.png" alt=""></span>
+          <span class="navitem"> <img class="navicon" src="assets/icon.png" alt=""></span>
+          <span class="navitem"> <img class="navicon" src="assets/icon.png" alt=""></span>
+      </nav>
+    </header>
+    <div id="root"></div>
+  </body>
+
+  <script src="renderer.js" ></script>
+</html>
+

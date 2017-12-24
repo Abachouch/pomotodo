@@ -1,0 +1,59 @@
+<template id="homeTemplate">
+    <style>
+        .tab {
+            background-color: rebeccapurple;
+            text-align: center;
+        }
+
+        .tab-header {
+            color: white;
+            display: inline-block;
+        }
+
+        .seleced {
+            color: red;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            padding-left: 0;
+            text-indent: 16px;
+        }
+        .task-list{
+            list-style: none;
+            padding: 16px ;
+        }
+        .task{
+            background-color: white ;
+            padding: 10px; 
+            position: relative ;
+            margin: 8px 0 ;
+        }
+    </style>
+
+    <div class="tab">
+        <span href="#" class="tab-header selected">TASK</span>
+        <span href="#" class="tab-header">DONE</span>
+        <span href="#" class="tab-header">RECENT</span>
+        <span href="#" class="tab-header">GROUP</span>
+    </div>
+    <input type="search" class="filter" name="filter" id="filterListTask">
+    <ul class="task-list" id="taskList">
+        <li class="task">
+            <span class="task-title" id="tl_taskTitle">Create an arcad game</span>
+            <span class="task-duration" id="tl_taskDuration">20min</span>
+            <span class="task-round" id="tl_taskround">3/5</span>
+        </li>
+        <li class="task">
+            <span class="task-title" id="tl_taskTitle">Create an arcad game</span>
+            <span class="task-duration" id="tl_taskDuration">20min</span>
+            <span class="task-round" id="tl_taskround">3/5</span>
+        </li>
+        <li class="task">
+            <span class="task-title" id="tl_taskTitle">Create an arcad game</span>
+            <span class="task-duration" id="tl_taskDuration">20min</span>
+            <span class="task-round" id="tl_taskround">3/5</span>
+        </li>
+    </ul>
+</template>
